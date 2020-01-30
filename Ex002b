@@ -1,0 +1,5 @@
+Pet-and-Owner (PetName,PetBreed,PetDOB,OwnerLastName,OwnerFirstName,OwnerPhone,OwnerEmail,Service,Date,Charge)
+OwnerEmail(OwnerFirstName, OwnerLastName, OwnerPhone), OwnerPhone(OwnerFirstName, OwnerLastName,OwnerEmail)
+PetName( PetBreed,PetDOB,PetType,OwnerPhone), (PetName,Date)(Service,Charge)
+The functional dependencies of the Pet is PetName(PetType,PetBreed,PetDOB,OwnerPhone), The functional dependencies of the Service is (petName,Date)(Service,Charge)
+Final Normalized rations are Owner(OwnerPhone,OwnerFirstName, OwnerLastName,OwnerEmail), Pet(PetName,PetBreed,PetDOB,PetType,OwnerPhone), Service( PetName, Date,Service, Charge)
